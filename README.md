@@ -22,6 +22,21 @@ The primary dataset used in this project is `greenhouse_gas_emissions_dataset.cs
 | `created_date`               | DateTime      | Record creation timestamp                                                  |
 | `modified_date`              | DateTime      | Record modification timestamp                                              |
 
+### Categories and Subcategories
+The dataset includes emissions data grouped into main categories and their respective subcategories:
+
+#### Main Categories and Subcategories
+| Main Category               | Subcategories                                                                                     |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| **Agriculture**             | `synthetic-fertilizer-application`, `cropland-fires`, `enteric-fermentation`, `manure-management`, `other-agriculture-soil-emissions`, `rice-cultivation` |
+| **Buildings**               | `other-onsite-fuel-usage`, `residential-and-commercial-onsite-fuel-usage`                        |
+| **Flourinated Gas**         | `fluorinated-gases`                                                                              |
+| **Fossil Fuel Operations**  | `coal-mining`, `oil-and-gas-production-and-transport`, `oil-and-gas-refining`, `other-fossil-fuel-operations`, `solid-fuel-transformation` |
+| **Manufacturing**           | `aluminum`, `cement`, `chemicals`, `other-manufacturing`, `pulp-and-paper`, `steel`              |
+| **Mineral Extraction**      | `bauxite-mining`, `copper-mining`, `iron-mining`, `rock-quarrying`, `sand-quarrying`             |
+| **Power**                   | `electricity-generation`, `other-energy-use`                                                    |
+| **Waste**                   | `biological-treatment-of-solid-waste-&-biogenic`, `incineration-and-open-burning-of-waste`, `solid-waste-disposal`, `wastewater-treatment-and-discharge` |
+
 ---
 
 ## Project Objectives
@@ -74,36 +89,4 @@ The primary dataset used in this project is `greenhouse_gas_emissions_dataset.cs
 ## Usage and Outputs
 
 ### File Outputs
-1. **Interactive HTML Visualizations**:
-   - Sankey Diagram: `emissions_sankey.html`
-   - Choropleth Map: `emissions_choropleth.html`
-   - Comparison Trends (2015 vs 2021): `emission_trends_comparison_2015_2021.html`
-
-2. **Static Visualizations**:
-   - Saved as `.png` for key charts (e.g., heatmaps, histograms).
-
-### Analysis Code
-- Python scripts process the dataset and generate visualizations.
-- Key libraries include:
-  - `pandas`: Data manipulation and processing.
-  - `plotly`: Interactive visualizations (e.g., Sankey diagrams, choropleth maps).
-  - `matplotlib`: Static plots and histograms.
-
----
-
-## How to Run the Project
-1. Clone the repository or download the dataset.
-2. Install required Python libraries:
-   ```bash
-   pip install pandas plotly matplotlib
-   ```
-3. Run the analysis scripts to generate outputs.
-4. Open the saved HTML or PNG files to explore visualizations.
-
----
-
-## Conclusion
-This project provides a comprehensive analysis of global greenhouse gas emissions, uncovering trends, distributions, and regional contributions. The insights are invaluable for policymakers, environmentalists, and researchers to drive sustainability efforts and target emission reductions in key sectors.
-
-Feel free to explore the visualizations and share feedback to improve the analysis further.
-
+1. **Interactive HTML Visualiza
